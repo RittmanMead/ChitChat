@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customLinks xmlns="com.siebel.analytics.web/customlinks/v1">
+
+<!-- DO NOT CHANGE THESE LINES - RM -->
+<link id="socializePaneButton" name="Socialize" description="Socialize" src="javascript:void(null);" target="self">
+    <locations>
+        <location name="header" insertBefore="catalog" />
+    </locations>
+</link>
+</customLinks>

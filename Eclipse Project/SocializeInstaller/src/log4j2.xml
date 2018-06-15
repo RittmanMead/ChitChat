@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Configuration> 
+  <Appenders> 
+  <File name="File" fileName="SocializeInstaller.log" >
+  	<PatternLayout pattern="%d %t %-5p %c{2} - %m%n" />
+  </File>
+    <Console name="STDOUT" target="SYSTEM_OUT"> 
+      <PatternLayout pattern="%d %-5p [%t] %C{2} (%F:%L) - %m%n"/> 
+    </Console> 
+  </Appenders> 
+  <Loggers> 
+    <Logger name="com.RittmanMead.DatabaseBuilder" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.JNDIBuilder" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.DeployBuilder" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.SocializeLogger" level="error" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+        <Logger name="com.RittmanMead.InstallParent" level="error" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.InstallParent" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.LinkBuilder" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.CustomizeLinkBuilder" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.SocializeUNInstaller" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Logger name="com.RittmanMead.SocializeInstaller" level="info" additivity="false"> 
+    	<AppenderRef ref="File" />
+    </Logger>
+    <Root level="trace"> 
+      <AppenderRef ref="STDOUT"/> 
+    </Root> 
+  </Loggers> 
+</Configuration>
