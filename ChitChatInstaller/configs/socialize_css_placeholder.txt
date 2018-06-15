@@ -1,0 +1,9 @@
+/* B - SOCIALIZE NEEDS THIS - RM */ 
+#socializePaneButton span {
+	color: rm_placeholder;
+}
+
+#socializePaneButton span .rm_active {
+	color: rm_activeplaceholder !important;
+}
+/* E - SOCIALIZE NEEDS THIS - RM */ 
